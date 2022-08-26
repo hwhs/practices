@@ -23,6 +23,7 @@ all:
 	$(MAKE) EX06_01
 	$(MAKE) EX06_02
 	$(MAKE) EX06_03
+	$(MAKE) EX06_05
 	$(MAKE) EX06_06
 	$(MAKE) EX06_07
 
@@ -73,6 +74,9 @@ EX06_02:
 
 EX06_03:
 	$(Q)clang -fobjc-arc $(SRC_DIR)/ex06-03.m -o $(EXE_DIR)/ex06-03
+
+EX06_05:
+	$(Q)clang -fobjc-arc $(SRC_DIR)/ex06-05.m -o $(EXE_DIR)/ex06-05
 
 EX06_06:
 	$(Q)clang -fobjc-arc $(SRC_DIR)/ex06-06.m -o $(EXE_DIR)/ex06-06

@@ -12,6 +12,9 @@ all:
 	$(MAKE) 09_02
 	$(MAKE) 09_03
 	$(MAKE) 09_05
+	$(MAKE) EX09_01
+	$(MAKE) EX09_02
+	$(MAKE) EX09_03
 
 clean:
 	$(Q)rm -rf $(EXE_DIR)
@@ -30,3 +33,12 @@ clean:
 
 09_05:
 	$(Q)clang -fobjc-arc $(SRC_DIR)/p193-09-05/*.m -o $(EXE_DIR)/09-05
+
+EX09_01:
+	$(Q)clang -fobjc-arc $(SRC_DIR)/ex09-01/*.m -o $(EXE_DIR)/ex09-01
+
+EX09_02:
+	$(Q)clang -fobjc-arc $(SRC_DIR)/ex09-02/*.m -o $(EXE_DIR)/ex09-02
+
+EX09_03:
+	$(Q)clang -fobjc-arc $(SRC_DIR)/ex09-03/*.m -o $(EXE_DIR)/ex09-03

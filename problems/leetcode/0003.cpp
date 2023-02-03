@@ -4,14 +4,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void dump(vector<int> nums)
-{
-    int size = nums.size();
-    for (int i = 0; i < size; i++) {
-        cout << nums[i] << ((i+1==size)?"\n":"/");
-    }
-}
-
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -55,7 +47,6 @@ public:
                 map[s[i]] = 0;
                 i++;
             }
-            dump(map);
             result = max(result, j-i);
         }
         return result;
